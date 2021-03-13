@@ -58,13 +58,32 @@ func reverseLine(_ line: Int) {
 }
 
 
+//class Solution {
+//    func tribonacci(_ n: Int) -> Int {
+//        if n == 0 {
+//            return 0
+//        } else if n == 1 || n == 2 {
+//            return 1
+//        }
+//        return tribonacci(n - 3) + tribonacci(n - 2) + tribonacci(n - 1)
+//    }
+//}
+
+// Leetcode 1306
 class Solution {
-    func tribonacci(_ n: Int) -> Int {
-        if n == 0 {
-            return 0
-        } else if n == 1 || n == 2 {
-            return 1
+    // if there is duplicate index number, 0 can be reached.
+    var usedIndexes: [Int] = []
+    func canReach(_ arr: [Int], _ start: Int) -> Bool {
+        if start > arr.count - 1 || start < 0 {
+            return false
         }
-        return tribonacci(n - 3) + tribonacci(n - 2) + tribonacci(n - 1)
+        if usedIndexes.contains(start) {
+            return false
+        }
+        if arr[start] == 0 {
+            return true
+        }
+        usedIndexes.append(start)
+        return canReach(arr, start + arr[start]) || canReach(arr, start - arr[start])
     }
 }

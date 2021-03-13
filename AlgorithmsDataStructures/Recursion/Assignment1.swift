@@ -31,14 +31,14 @@ func evaluateHelper(_ formula: String) -> Int {
         }
     }
     
-    let leftSubString = formula.dropFirst(i)
-    let left = String(leftSubString)
-    
-    
-    
-    switch
-    
-    
+//    let leftSubString = formula.dropFirst(i)
+//    let left = String(leftSubString)
+//    
+//    
+//    
+//    switch
+//    
+//    
     
     return 5
 }
