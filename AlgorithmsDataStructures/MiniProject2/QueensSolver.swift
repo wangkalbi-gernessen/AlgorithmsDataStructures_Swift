@@ -15,9 +15,21 @@ import Foundation
 /// - You are allowed to change the function header (args or return type)
 /// - Your total recursive calls should not exceed 120 times.
 
-//var count = 0
-func solveQueens(board: inout Board) {
-//	count += 1
-	
+var count = 0
+
+func solveQueens(_ n: Int) -> [[String]] {
+    var solutions =  [[String]]()
+    var board = Board(size: 8)
+    solveQueenHelper(&board, 0)
+    return solutions
 }
 
+func solveQueenHelper(_ board: inout Board, _ col: Int) {
+    for i in 0..<board.size {
+        if board.isSafe(row: i, col: col) {
+            board.place(row: i, col: col)
+            solveQueenHelper(&board, col + 1)
+            board.remove(row: i, col: col)
+        }
+    }
+}

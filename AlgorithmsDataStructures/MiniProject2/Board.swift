@@ -36,7 +36,7 @@ struct Board: CustomStringConvertible {
 		// check diagonals
 		for d in 0..<self.size {
 			if (isOnBoard(row: row - d, col: col - d) && self.board[row-d][col-d] == "Q")
-				|| (isOnBoard(row: row + d, col: col + d) && self.board[row+d][col+d] == "Q")
+            || (isOnBoard(row: row + d, col: col + d) && self.board[row+d][col+d] == "Q")
 				|| (isOnBoard(row: row + d, col: col - d) && self.board[row+d][col-d] == "Q")
 				|| (isOnBoard(row: row - d, col: col + d) && self.board[row-d][col+d] == "Q") {
 				return false

@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let board = Board(size: 8)
