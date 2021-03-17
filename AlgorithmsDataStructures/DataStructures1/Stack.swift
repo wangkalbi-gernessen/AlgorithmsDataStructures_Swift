@@ -7,6 +7,11 @@
 
 import Foundation
 
+/// The **Stack** class represents a queue of generic items.
+/// It supports insertion and iterating over the items Last-in-first-out policy
+/// This implementation uses a singly linked list with an inner class Node.
+/// The *push*, *pop*, and *count*, *isEmpty*, *peek* operations take constant time *O(1)*. Iteration takes linear time *O(n)*.
+
 public final class Stack<E>: Sequence {
     // set head node
     private var head: Node<E>? = nil
@@ -34,6 +39,7 @@ public final class Stack<E>: Sequence {
         count += 1
     }
     
+    // remove head node (head node was pushed at the end)
     func pop() -> E? {
         head = head?.next
         if isEmpty() == true {

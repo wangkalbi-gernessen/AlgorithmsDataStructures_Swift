@@ -7,6 +7,11 @@
 
 import Foundation
 
+/// The **Queue** class represents a queue of generic items.
+/// It supports insertion and iterating over the items first-in-first-out policy
+/// This implementation uses a singly linked list with an inner class Node.
+/// The *enqueue*, *dequeue*, and *count*, *isEmpty*, *peek* operations take constant time *O(1)*. Iteration takes linear time *O(n)*.
+
 public final class Queue<E>: Sequence {
     // set head node
     private var head: Node<E>? = nil
@@ -26,7 +31,7 @@ public final class Queue<E>: Sequence {
     init() {}
     
     // add item
-    func push(_ item: E) {
+    func enqueue(_ item: E) {
         head = Node(item: item, next: head)
         if tail == nil {
             tail = head
@@ -34,7 +39,8 @@ public final class Queue<E>: Sequence {
         count += 1
     }
     
-    func pop() -> E? {
+    // remove tail node (tail node was pushed at first)
+    func dequeue() -> E? {
         if head == nil {
             return nil
         }
