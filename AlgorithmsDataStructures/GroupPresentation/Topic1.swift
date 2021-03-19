@@ -8,8 +8,7 @@
 import Foundation
 
 func runStream() {
-    print("Please enter number: ")
-    
+    print("Please enter number from 1 to 500: ")
     if let number = readLine() {
         findLargestAndSmallest(Int(number)!)
     } else {
@@ -18,24 +17,16 @@ func runStream() {
 }
 
 func findLargestAndSmallest(_ n: Int) {
-    let intArray = (1...n).map {$0}
-//    print(intArray)
     
-    // find the smallest number out of array
-    var smallest = 0
-    for j in 1..<intArray.count {
-        if intArray[smallest] > intArray[j] {
-            smallest = j
-        }
+    var result = Set<Int>()
+    var index = 0
+    // Time Complexity O(n)
+    while index < 50 {
+        result.insert(Int.random(in: 1...n))
+        index += 1
     }
-    print(intArray[smallest])
+    print(result)
     
-    // find the largest number out of array
-    var largest = 0
-    for i in 1..<intArray.count {
-        if intArray[largest] < intArray[i] {
-            largest = i
-        }
-    }
-    print(intArray[largest])
+    
+    
 }

@@ -81,15 +81,15 @@ import Foundation
 //
 //print(solveQueens(0))
 
-let stack = Stack<Int>()
-stack.push(5)
-stack.push(10)
-stack.push(8)
-stack.push(3)
-print(stack.count)
-print(stack.peek())
-stack.pop()
-print(stack.description)
+//let stack = Stack<Int>()
+//stack.push(5)
+//stack.push(10)
+//stack.push(8)
+//stack.push(3)
+//print(stack.count)
+//print(stack.peek())
+//stack.pop()
+//print(stack.description)
 
 //let queue = Queue<Int>()
 //queue.push(5)
@@ -109,4 +109,8 @@ print(stack.description)
 //bag.add(item: 8)
 //print(bag.description)
 
-runStream()
+//runStream()
+
+
+
+treeTraversal()
