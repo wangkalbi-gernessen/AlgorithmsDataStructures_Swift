@@ -109,6 +109,6 @@ import Foundation
 //bag.add(item: 8)
 //print(bag.description)
 
-//createGraph()
-repeatSequence()
+print(createGraph())
+//repeatSequence()
 

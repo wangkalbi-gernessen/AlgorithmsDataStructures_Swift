@@ -7,7 +7,7 @@
 
 import Foundation
 
-func createGraph() {
+func createGraph() -> Int {
     // create array of all nodes
     let firstLine = readLine()!.split(separator: " ")
     
@@ -16,7 +16,12 @@ func createGraph() {
     for index in 0..<firstLine.count {
         adjList[index + 1].append(Int(firstLine[index])!)
     }
-//    print(adjList)
+    
+    if firstLine.count <= 1 {
+        if adjList[1][0] != 1 {
+            return 0
+        }
+    }
     
     var visited = [Bool](repeating: false, count: firstLine.count + 1)
     var stack:[Int] = []
@@ -31,7 +36,6 @@ func createGraph() {
             //            dfs(nodeVal, stack, adjList, visited)
             while !stack.isEmpty {
                 let vertex = stack.removeLast()
-//                print(vertex)
                 
                 for v in adjList[vertex] {
                     if !visited[v] {
@@ -45,6 +49,5 @@ func createGraph() {
             cyclicCount += 1
         }
     }
-    
-    print(cyclicCount)
+    return cyclicCount
 }
