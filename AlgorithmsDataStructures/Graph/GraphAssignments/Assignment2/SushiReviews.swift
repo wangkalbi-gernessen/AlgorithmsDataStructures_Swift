@@ -16,7 +16,7 @@ func reviewSushi() {
     let secondLine = readLine()!.split(separator: " ")
     var realSushiPlacecs = [Int]()
     for i in 0..<m {
-        var place = Int(secondLine[i])!
+        let place = Int(secondLine[i])!
         realSushiPlacecs.append(place)
     }
     print("real sushi place:", realSushiPlacecs)
@@ -39,10 +39,10 @@ func reviewSushi() {
     func updateGraph(adjList: inout [[Int]], updatedList: inout [[Int]]) {
         updatedList = adjList
         var removed = [Int]()
-        // store the index with a single element (& not the real place)
+        // store the index with a single element
         for i in 0...adjList.count - 1 {
             print("i val: ", i)
-            var nodes = adjList[i]
+            let nodes = adjList[i]
             if nodes.count == 1 &&
                 !realSushiPlacecs.contains(i) {
                 print("delete index: ", i)
@@ -51,7 +51,6 @@ func reviewSushi() {
         }
         print("removed: ", removed)
         
-        // return from recursive call when there are no elements to remove
         if removed == [] {
             print(updatedList)
             trimmed = updatedList
@@ -66,9 +65,9 @@ func reviewSushi() {
             updatedList.remove(at: removed[j] - count)
             count += 1
         }
-        // remove edges from the deleted element
+        // remove edges from deleted element
         for i in 0..<updatedList.count {
-            var nodes = updatedList[i]
+            let nodes = updatedList[i]
             print("nodes", nodes)
             for j in 0...nodes.count - 1 {
                 print("j: ", j)
@@ -92,7 +91,7 @@ func reviewSushi() {
     
     print("trimmedList: ", trimmed)
     
-    // search trimmed diameter
+    // search trimmeddiameter
     var distance = 0
     func bfs(node: Int, check: inout [Bool], distances: inout [Int], adjList: inout [[Int]]) {
         let q = Queue<Int>()
@@ -111,8 +110,7 @@ func reviewSushi() {
         }
     }
     
-    var start = 0
-    var check = [Bool](repeating:false, count: trimmed.count)
-   
+    let start = 0
+    let check = [Bool](repeating:false, count: trimmed.count)
     print("distance: ",distance)
 }
