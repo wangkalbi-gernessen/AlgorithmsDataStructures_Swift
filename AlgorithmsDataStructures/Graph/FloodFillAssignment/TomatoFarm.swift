@@ -7,65 +7,85 @@
 
 import Foundation
 
-func town() {
-  struct Square {
-    let x: Int
-    let y: Int
-  }
-  
-  let dx = [0, 0, 1, -1]
-  let dy = [1, -1, 0, 0]
-  
-  var townMap = [[Int]]()
-  var coloredMap = [[Int]](repeating: [Int](repeating: 0, count: 25), count: 25)
-  var houses = [Int](repeating: 0, count: 25 * 25) // the number of houses for each town (index)
-  
-  let n = Int(readLine()!)!
-  for _ in 0..<n {
-    let row = readLine()!.map { Int(String($0))! }
-    townMap.append(row)
-  }
-    print(townMap)
-  
-  func bfs(square: Square, id: Int) {
-    let q = Queue<Square>()
-    q.enqueue(square)
-    coloredMap[square.x][square.y] = id
-    houses[id] += 1
+func tomatoFarm() {
+    // farm with x and y coordinates
+    struct Square {
+        let x: Int
+        let y: Int
+    }
     
-    while !q.isEmpty() {
-      let sq = q.dequeue()!
-      let x = sq.x
-      let y = sq.y
-      for i in 0..<4 {
-        let nx = x + dx[i]
-        let ny = y + dy[i]
-        // check the bounds
-        if nx >= 0 && nx < n && ny >= 0 && ny < n {
-          if (townMap[nx][ny] == 1 && coloredMap[nx][ny] == 0) { // check if there's a house
-            q.enqueue(Square(x: nx, y: ny))
-            coloredMap[nx][ny] = id
-            houses[id] += 1
-          }
+    // directions for x and y
+    let dx = [0, 0, 1, -1]
+    let dy = [1, -1, 0, 0]
+    
+    // create Map with the first input, store the initial input
+    var farmMap = [[Int]]()
+    // process the input
+    let firstLine = readLine()!.split(separator: " ").map { Int($0)! }
+    let m = firstLine[0]
+    let n = firstLine[1]
+    
+    // store data processed
+    var ripedMap = [[Int]](repeating: [Int](repeating: 0, count: m), count: n)
+    
+    for _ in 0..<n {
+      let rowOpt = readLine()!.map { Int(String($0)) }
+        let row = rowOpt.flatMap {$0}
+        farmMap.append(row)
+    }
+    
+    // riped -> 1,  unriped -> 0
+    func bfs(square: Square, id: Int) {
+        let q = Queue<Square>()
+        q.enqueue(square)
+        // new map with
+        ripedMap[square.x][square.y] = id
+        
+        var count  = 0
+        while !q.isEmpty() {
+            let sq = q.dequeue()!
+            count += 1
+            let x = sq.x
+            let y = sq.y
+            // check left, right, front,back
+            for i in 0..<4 {
+                let nx = x + dx[i]
+                let ny = y + dy[i]
+                // check the bounds
+                if nx >= 0 && nx < n && ny >= 0 && ny < m {
+                    if (farmMap[nx][ny] == 1 && ripedMap[nx][ny] == 0) {
+                        ripedMap[nx][ny] = id + 1
+                        bfs(square: Square(x: nx, y: ny), id: id)
+                    } else if (farmMap[nx][ny] == 0 && ripedMap[nx][ny] == 0) {
+                        ripedMap[nx][ny] = id + 1
+                        bfs(square: Square(x: nx, y: ny), id: id + count)
+                    }
+                }
+                count = 0
+            }
         }
-      }
     }
-  }
-  
-  var id = 0
-  for x in 0..<n {
-    for y in 0..<n {
-      if townMap[x][y] == 1 && coloredMap[x][y] == 0 {
-        id += 1
-        bfs(square: Square(x: x, y: y), id: id)
-      }
+    
+    // check the unriped place(starting point) using for loop
+    var id = 0
+    for x in 0..<n {
+        for y in 0..<m {
+            if farmMap[x][y] == 1 && ripedMap[x][y] == 0 {
+                id += 1
+                bfs(square: Square(x: x, y: y), id: id)
+            }
+        }
     }
-  }
-  
-  print(id) // the number of towns
-  houses = Array(houses[1...id]) // getting the sub array from index 1 to id
-  houses.sort()
-  for num in houses {
-    print(num) // the number of houses per town
-  }
+    
+    var minDay = 0
+    for x in 0..<n {
+        for y in 0..<m {
+            if farmMap[x][y] > minDay {
+                minDay = farmMap[x][y]
+            }
+        }
+    }
+    
+    print(ripedMap)
+    print(minDay)
 }
