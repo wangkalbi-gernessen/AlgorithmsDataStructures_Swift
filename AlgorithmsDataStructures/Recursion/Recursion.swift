@@ -70,20 +70,20 @@ func reverseLine(_ line: Int) {
 //}
 
 // Leetcode 1306
-class Solution {
-    // if there is duplicate index number, 0 can be reached.
-    var usedIndexes: [Int] = []
-    func canReach(_ arr: [Int], _ start: Int) -> Bool {
-        if start > arr.count - 1 || start < 0 {
-            return false
-        }
-        if usedIndexes.contains(start) {
-            return false
-        }
-        if arr[start] == 0 {
-            return true
-        }
-        usedIndexes.append(start)
-        return canReach(arr, start + arr[start]) || canReach(arr, start - arr[start])
-    }
-}
+//class Solution {
+//    // if there is duplicate index number, 0 can be reached.
+//    var usedIndexes: [Int] = []
+//    func canReach(_ arr: [Int], _ start: Int) -> Bool {
+//        if start > arr.count - 1 || start < 0 {
+//            return false
+//        }
+//        if usedIndexes.contains(start) {
+//            return false
+//        }
+//        if arr[start] == 0 {
+//            return true
+//        }
+//        usedIndexes.append(start)
+//        return canReach(arr, start + arr[start]) || canReach(arr, start - arr[start])
+//    }
+//}

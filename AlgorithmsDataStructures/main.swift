@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 ////print(power(base: 2, exponent: 4))
 //
 ////print(palindrome("amoma"))
@@ -111,5 +109,9 @@ import Foundation
 
 //print(createGraph())
 //repeatSequence()
+//tomatoFarm()
+//topologicalSort()
 
-town()
+let solution = Solution()
+//print(solution.canFinish(2, [[0,1]]))
+print(solution.findOrder(2, [[1,0]]))
