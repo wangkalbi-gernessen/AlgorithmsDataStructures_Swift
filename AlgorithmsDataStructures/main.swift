@@ -114,4 +114,6 @@ import Foundation
 
 let solution = Solution()
 //print(solution.canFinish(2, [[0,1]]))
-print(solution.findOrder(2, [[1,0]]))
+//print(solution.findOrder(2, [[1,0]]))
+
+print(solution.canCompleteCircuit(<#T##gas: [Int]##[Int]#>, <#T##cost: [Int]##[Int]#>))

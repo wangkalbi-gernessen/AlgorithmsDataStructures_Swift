@@ -42,7 +42,8 @@ public struct UF {
     
     /// Returns the canonical element(root) of the set containing element `p`.
     /// - Parameter p: an element
-    /// - Returns: the canonical element of the set containing `p`
+    /// - Returns: the canonical element of the set c
+    /// ontaining `p`
     public mutating func find(_ p: Int) -> Int {
         if parent[p] < 0 {
             return p

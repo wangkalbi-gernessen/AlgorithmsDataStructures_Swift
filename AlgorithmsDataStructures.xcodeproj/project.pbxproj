@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3339472624161F002C9D51 /* MSTImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3339462624161F002C9D51 /* MSTImplementation.swift */; };
+		FA3339512624B4FF002C9D51 /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33394E2624B4FF002C9D51 /* PartitionLabels.swift */; };
+		FA3339522624B4FF002C9D51 /* TwoCityScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33394F2624B4FF002C9D51 /* TwoCityScheduling.swift */; };
+		FA3339532624B4FF002C9D51 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3339502624B4FF002C9D51 /* TaskScheduler.swift */; };
+		FA3339572624B536002C9D51 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3339562624B536002C9D51 /* GasStation.swift */; };
 		FA41BC8D25FC2AAF00C50234 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41BC8C25FC2AAF00C50234 /* QuickSort.swift */; };
 		FA41BC9E25FD431200C50234 /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41BC9D25FD431200C50234 /* Crawler.swift */; };
 		FA41BCB025FFF72900C50234 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41BCAF25FFF72900C50234 /* Bag.swift */; };
@@ -20,6 +25,7 @@
 		FA4AC71325F8210B00B8F291 /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AC71225F8210B00B8F291 /* Recursion.swift */; };
 		FA4CF972261E8CA900CBC4A1 /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CF971261E8CA900CBC4A1 /* CourseSchedule.swift */; };
 		FA4CF97E261E928B00CBC4A1 /* CourseSchedule_II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CF97D261E928B00CBC4A1 /* CourseSchedule_II.swift */; };
+		FA4CF987261FB31D00CBC4A1 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CF986261FB31D00CBC4A1 /* UF.swift */; };
 		FA6F8A6025FA685B008E95FD /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F8A5F25FA685B008E95FD /* String+DPStringTool.swift */; };
 		FA6F8ABF25FAC8F9008E95FD /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F8ABE25FAC8F9008E95FD /* BackTracking.swift */; };
 		FA6F8AC425FAD0A5008E95FD /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F8AC225FAD0A5008E95FD /* QueensSolver.swift */; };
@@ -55,6 +61,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA3339462624161F002C9D51 /* MSTImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTImplementation.swift; sourceTree = "<group>"; };
+		FA33394E2624B4FF002C9D51 /* PartitionLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
+		FA33394F2624B4FF002C9D51 /* TwoCityScheduling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoCityScheduling.swift; sourceTree = "<group>"; };
+		FA3339502624B4FF002C9D51 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
+		FA3339562624B536002C9D51 /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		FA41BC8C25FC2AAF00C50234 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		FA41BC9D25FD431200C50234 /* Crawler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crawler.swift; sourceTree = "<group>"; };
 		FA41BCAF25FFF72900C50234 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
@@ -69,6 +80,7 @@
 		FA4AC71225F8210B00B8F291 /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		FA4CF971261E8CA900CBC4A1 /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		FA4CF97D261E928B00CBC4A1 /* CourseSchedule_II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule_II.swift; sourceTree = "<group>"; };
+		FA4CF986261FB31D00CBC4A1 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 		FA6F8A5F25FA685B008E95FD /* String+DPStringTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DPStringTool.swift"; sourceTree = "<group>"; };
 		FA6F8ABE25FAC8F9008E95FD /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
 		FA6F8AC225FAD0A5008E95FD /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
@@ -103,6 +115,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA33394526241605002C9D51 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				FA33394D2624B4C1002C9D51 /* Assignment */,
+				FA3339462624161F002C9D51 /* MSTImplementation.swift */,
+			);
+			path = Greedy;
+			sourceTree = "<group>";
+		};
+		FA33394D2624B4C1002C9D51 /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				FA33394E2624B4FF002C9D51 /* PartitionLabels.swift */,
+				FA3339502624B4FF002C9D51 /* TaskScheduler.swift */,
+				FA33394F2624B4FF002C9D51 /* TwoCityScheduling.swift */,
+				FA3339562624B536002C9D51 /* GasStation.swift */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
 		FA41BC8B25FC2A9200C50234 /* QuickSort */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +197,7 @@
 		FA4AC70825F820AA00B8F291 /* AlgorithmsDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				FA33394526241605002C9D51 /* Greedy */,
 				FADD378D260B926700FEA545 /* Graph */,
 				FAEEE67B2607D27D000E2259 /* PriorityQueue */,
 				FA43C8352603DD6E009FEC17 /* TreeQuiz */,
@@ -196,6 +229,22 @@
 			children = (
 				FA4CF971261E8CA900CBC4A1 /* CourseSchedule.swift */,
 				FA4CF97D261E928B00CBC4A1 /* CourseSchedule_II.swift */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
+		FA4CF984261FB30100CBC4A1 /* UnionFind */ = {
+			isa = PBXGroup;
+			children = (
+				FA4CF985261FB30D00CBC4A1 /* Assignment */,
+			);
+			path = UnionFind;
+			sourceTree = "<group>";
+		};
+		FA4CF985261FB30D00CBC4A1 /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				FA4CF986261FB31D00CBC4A1 /* UF.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -247,6 +296,7 @@
 		FADD378D260B926700FEA545 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				FA4CF984261FB30100CBC4A1 /* UnionFind */,
 				FAC12F4E261D193D00992CB4 /* TopologicalSorting */,
 				FADD37A8260D299D00FEA545 /* GraphAssignments */,
 				FADD379C260BE89400FEA545 /* FloodFill */,
@@ -362,9 +412,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA12DF125F915BF006D9C4B /* Assignment1.swift in Sources */,
+				FA3339512624B4FF002C9D51 /* PartitionLabels.swift in Sources */,
 				FA6F8A6025FA685B008E95FD /* String+DPStringTool.swift in Sources */,
+				FA3339472624161F002C9D51 /* MSTImplementation.swift in Sources */,
 				FAC12F4C261D193300992CB4 /* TopologicalSorting.swift in Sources */,
 				FA41BCB425FFF73100C50234 /* Stack.swift in Sources */,
+				FA3339532624B4FF002C9D51 /* TaskScheduler.swift in Sources */,
 				FA6F8AC425FAD0A5008E95FD /* QueensSolver.swift in Sources */,
 				FA4AC71325F8210B00B8F291 /* Recursion.swift in Sources */,
 				FA4CF97E261E928B00CBC4A1 /* CourseSchedule_II.swift in Sources */,
@@ -373,6 +426,7 @@
 				FA6F8ABF25FAC8F9008E95FD /* BackTracking.swift in Sources */,
 				FADD3797260B927D00FEA545 /* bipartite.swift in Sources */,
 				FADD37BA260D8B5500FEA545 /* RepeatingSequence.swift in Sources */,
+				FA3339572624B536002C9D51 /* GasStation.swift in Sources */,
 				FADD3799260B927D00FEA545 /* DFS.swift in Sources */,
 				FA41BCB025FFF72900C50234 /* Bag.swift in Sources */,
 				FA4CF972261E8CA900CBC4A1 /* CourseSchedule.swift in Sources */,
@@ -381,6 +435,7 @@
 				FADD3795260B927D00FEA545 /* AdjacencyMatrix.swift in Sources */,
 				FA41BCB725FFF73900C50234 /* Queue.swift in Sources */,
 				FA41BC9E25FD431200C50234 /* Crawler.swift in Sources */,
+				FA4CF987261FB31D00CBC4A1 /* UF.swift in Sources */,
 				FAA12DF725F975FB006D9C4B /* ExhaustiveResearch.swift in Sources */,
 				FAAD0D13261BE7FA002A7999 /* SushiReviews.swift in Sources */,
 				FA43C83E26042AE4009FEC17 /* Diameter.swift in Sources */,
@@ -388,6 +443,7 @@
 				FADD3798260B927D00FEA545 /* ConnectedComponents.swift in Sources */,
 				FAAD0CC72615FC8D002A7999 /* TomatoFarm.swift in Sources */,
 				FA6F8AC525FAD0A5008E95FD /* Board.swift in Sources */,
+				FA3339522624B4FF002C9D51 /* TwoCityScheduling.swift in Sources */,
 				FADD37AC260D2D9400FEA545 /* CyclicPermutation.swift in Sources */,
 				FADD3796260B927D00FEA545 /* AdjacencyList.swift in Sources */,
 				FADD3794260B927D00FEA545 /* BFS.swift in Sources */,
