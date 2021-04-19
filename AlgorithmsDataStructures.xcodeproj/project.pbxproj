@@ -12,6 +12,8 @@
 		FA3339522624B4FF002C9D51 /* TwoCityScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33394F2624B4FF002C9D51 /* TwoCityScheduling.swift */; };
 		FA3339532624B4FF002C9D51 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3339502624B4FF002C9D51 /* TaskScheduler.swift */; };
 		FA3339572624B536002C9D51 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3339562624B536002C9D51 /* GasStation.swift */; };
+		FA33396726262AA5002C9D51 /* DijkstraArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33396626262AA5002C9D51 /* DijkstraArray.swift */; };
+		FA33396B26263E32002C9D51 /* BellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33396A26263E32002C9D51 /* BellmanFord.swift */; };
 		FA41BC8D25FC2AAF00C50234 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41BC8C25FC2AAF00C50234 /* QuickSort.swift */; };
 		FA41BC9E25FD431200C50234 /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41BC9D25FD431200C50234 /* Crawler.swift */; };
 		FA41BCB025FFF72900C50234 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41BCAF25FFF72900C50234 /* Bag.swift */; };
@@ -26,12 +28,19 @@
 		FA4CF972261E8CA900CBC4A1 /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CF971261E8CA900CBC4A1 /* CourseSchedule.swift */; };
 		FA4CF97E261E928B00CBC4A1 /* CourseSchedule_II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CF97D261E928B00CBC4A1 /* CourseSchedule_II.swift */; };
 		FA4CF987261FB31D00CBC4A1 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CF986261FB31D00CBC4A1 /* UF.swift */; };
+		FA6F7EEF2627B6B800DE1064 /* NetworkDelayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F7EEE2627B6B800DE1064 /* NetworkDelayTime.swift */; };
+		FA6F7EF426285F9100DE1064 /* FindCheapestPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F7EF326285F9100DE1064 /* FindCheapestPrice.swift */; };
+		FA6F7EF92628E34400DE1064 /* MiniMumCostFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F7EF82628E34400DE1064 /* MiniMumCostFlow.swift */; };
+		FA6F7F07262A48C200DE1064 /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F7F06262A48C200DE1064 /* ClimbingStairs.swift */; };
+		FA6F7F0A262A49D000DE1064 /* MakeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F7F09262A49D000DE1064 /* MakeOne.swift */; };
+		FA6F7F13262CEBE700DE1064 /* FindTheCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F7F12262CEBE700DE1064 /* FindTheCity.swift */; };
 		FA6F8A6025FA685B008E95FD /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F8A5F25FA685B008E95FD /* String+DPStringTool.swift */; };
 		FA6F8ABF25FAC8F9008E95FD /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F8ABE25FAC8F9008E95FD /* BackTracking.swift */; };
 		FA6F8AC425FAD0A5008E95FD /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F8AC225FAD0A5008E95FD /* QueensSolver.swift */; };
 		FA6F8AC525FAD0A5008E95FD /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F8AC325FAD0A5008E95FD /* Board.swift */; };
 		FAA12DF125F915BF006D9C4B /* Assignment1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA12DF025F915BF006D9C4B /* Assignment1.swift */; };
 		FAA12DF725F975FB006D9C4B /* ExhaustiveResearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA12DF625F975FB006D9C4B /* ExhaustiveResearch.swift */; };
+		FAA9E870262758D000C52C1C /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9E86F262758D000C52C1C /* TimeMachine.swift */; };
 		FAAD0CC72615FC8D002A7999 /* TomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CC62615FC8D002A7999 /* TomatoFarm.swift */; };
 		FAAD0CCB2615FC9D002A7999 /* Bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CCA2615FC9D002A7999 /* Bridges.swift */; };
 		FAAD0D13261BE7FA002A7999 /* SushiReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0D12261BE7FA002A7999 /* SushiReviews.swift */; };
@@ -66,6 +75,8 @@
 		FA33394F2624B4FF002C9D51 /* TwoCityScheduling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoCityScheduling.swift; sourceTree = "<group>"; };
 		FA3339502624B4FF002C9D51 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		FA3339562624B536002C9D51 /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
+		FA33396626262AA5002C9D51 /* DijkstraArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraArray.swift; sourceTree = "<group>"; };
+		FA33396A26263E32002C9D51 /* BellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellmanFord.swift; sourceTree = "<group>"; };
 		FA41BC8C25FC2AAF00C50234 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		FA41BC9D25FD431200C50234 /* Crawler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crawler.swift; sourceTree = "<group>"; };
 		FA41BCAF25FFF72900C50234 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
@@ -81,12 +92,19 @@
 		FA4CF971261E8CA900CBC4A1 /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		FA4CF97D261E928B00CBC4A1 /* CourseSchedule_II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule_II.swift; sourceTree = "<group>"; };
 		FA4CF986261FB31D00CBC4A1 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
+		FA6F7EEE2627B6B800DE1064 /* NetworkDelayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTime.swift; sourceTree = "<group>"; };
+		FA6F7EF326285F9100DE1064 /* FindCheapestPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCheapestPrice.swift; sourceTree = "<group>"; };
+		FA6F7EF82628E34400DE1064 /* MiniMumCostFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMumCostFlow.swift; sourceTree = "<group>"; };
+		FA6F7F06262A48C200DE1064 /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
+		FA6F7F09262A49D000DE1064 /* MakeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOne.swift; sourceTree = "<group>"; };
+		FA6F7F12262CEBE700DE1064 /* FindTheCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheCity.swift; sourceTree = "<group>"; };
 		FA6F8A5F25FA685B008E95FD /* String+DPStringTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DPStringTool.swift"; sourceTree = "<group>"; };
 		FA6F8ABE25FAC8F9008E95FD /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
 		FA6F8AC225FAD0A5008E95FD /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		FA6F8AC325FAD0A5008E95FD /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		FAA12DF025F915BF006D9C4B /* Assignment1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1.swift; sourceTree = "<group>"; };
 		FAA12DF625F975FB006D9C4B /* ExhaustiveResearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhaustiveResearch.swift; sourceTree = "<group>"; };
+		FAA9E86F262758D000C52C1C /* TimeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMachine.swift; sourceTree = "<group>"; };
 		FAAD0CC62615FC8D002A7999 /* TomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoFarm.swift; sourceTree = "<group>"; };
 		FAAD0CCA2615FC9D002A7999 /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
 		FAAD0D12261BE7FA002A7999 /* SushiReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiReviews.swift; sourceTree = "<group>"; };
@@ -118,6 +136,7 @@
 		FA33394526241605002C9D51 /* Greedy */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F7EF72628CFDA00DE1064 /* MinimumCostFlow */,
 				FA33394D2624B4C1002C9D51 /* Assignment */,
 				FA3339462624161F002C9D51 /* MSTImplementation.swift */,
 			);
@@ -133,6 +152,17 @@
 				FA3339562624B536002C9D51 /* GasStation.swift */,
 			);
 			path = Assignment;
+			sourceTree = "<group>";
+		};
+		FA33396526262A8B002C9D51 /* ShortestPath */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F7EED2627B60900DE1064 /* Assignment */,
+				FA33396626262AA5002C9D51 /* DijkstraArray.swift */,
+				FA33396A26263E32002C9D51 /* BellmanFord.swift */,
+				FAA9E86F262758D000C52C1C /* TimeMachine.swift */,
+			);
+			path = ShortestPath;
 			sourceTree = "<group>";
 		};
 		FA41BC8B25FC2A9200C50234 /* QuickSort */ = {
@@ -197,6 +227,7 @@
 		FA4AC70825F820AA00B8F291 /* AlgorithmsDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F7F04262A3FDB00DE1064 /* DynamicProgramming */,
 				FA33394526241605002C9D51 /* Greedy */,
 				FADD378D260B926700FEA545 /* Graph */,
 				FAEEE67B2607D27D000E2259 /* PriorityQueue */,
@@ -249,6 +280,41 @@
 			path = Assignment;
 			sourceTree = "<group>";
 		};
+		FA6F7EED2627B60900DE1064 /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F7EEE2627B6B800DE1064 /* NetworkDelayTime.swift */,
+				FA6F7EF326285F9100DE1064 /* FindCheapestPrice.swift */,
+				FA6F7F12262CEBE700DE1064 /* FindTheCity.swift */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
+		FA6F7EF72628CFDA00DE1064 /* MinimumCostFlow */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F7EF82628E34400DE1064 /* MiniMumCostFlow.swift */,
+			);
+			path = MinimumCostFlow;
+			sourceTree = "<group>";
+		};
+		FA6F7F04262A3FDB00DE1064 /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F7F05262A48B400DE1064 /* Assignment */,
+			);
+			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
+		FA6F7F05262A48B400DE1064 /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F7F06262A48C200DE1064 /* ClimbingStairs.swift */,
+				FA6F7F09262A49D000DE1064 /* MakeOne.swift */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
 		FA6F8AC125FAD05C008E95FD /* MiniProject2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +362,7 @@
 		FADD378D260B926700FEA545 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				FA33396526262A8B002C9D51 /* ShortestPath */,
 				FA4CF984261FB30100CBC4A1 /* UnionFind */,
 				FAC12F4E261D193D00992CB4 /* TopologicalSorting */,
 				FADD37A8260D299D00FEA545 /* GraphAssignments */,
@@ -414,6 +481,8 @@
 				FAA12DF125F915BF006D9C4B /* Assignment1.swift in Sources */,
 				FA3339512624B4FF002C9D51 /* PartitionLabels.swift in Sources */,
 				FA6F8A6025FA685B008E95FD /* String+DPStringTool.swift in Sources */,
+				FA6F7EF426285F9100DE1064 /* FindCheapestPrice.swift in Sources */,
+				FA6F7EEF2627B6B800DE1064 /* NetworkDelayTime.swift in Sources */,
 				FA3339472624161F002C9D51 /* MSTImplementation.swift in Sources */,
 				FAC12F4C261D193300992CB4 /* TopologicalSorting.swift in Sources */,
 				FA41BCB425FFF73100C50234 /* Stack.swift in Sources */,
@@ -421,6 +490,7 @@
 				FA6F8AC425FAD0A5008E95FD /* QueensSolver.swift in Sources */,
 				FA4AC71325F8210B00B8F291 /* Recursion.swift in Sources */,
 				FA4CF97E261E928B00CBC4A1 /* CourseSchedule_II.swift in Sources */,
+				FA33396B26263E32002C9D51 /* BellmanFord.swift in Sources */,
 				FAEEE67D2607D28C000E2259 /* PriorityQueue.swift in Sources */,
 				FA41BC8D25FC2AAF00C50234 /* QuickSort.swift in Sources */,
 				FA6F8ABF25FAC8F9008E95FD /* BackTracking.swift in Sources */,
@@ -430,24 +500,30 @@
 				FADD3799260B927D00FEA545 /* DFS.swift in Sources */,
 				FA41BCB025FFF72900C50234 /* Bag.swift in Sources */,
 				FA4CF972261E8CA900CBC4A1 /* CourseSchedule.swift in Sources */,
+				FAA9E870262758D000C52C1C /* TimeMachine.swift in Sources */,
 				FA43C8272602AFC0009FEC17 /* TreeTraversal.swift in Sources */,
 				FA43C83B26042ADA009FEC17 /* MyParent.swift in Sources */,
 				FADD3795260B927D00FEA545 /* AdjacencyMatrix.swift in Sources */,
 				FA41BCB725FFF73900C50234 /* Queue.swift in Sources */,
+				FA6F7EF92628E34400DE1064 /* MiniMumCostFlow.swift in Sources */,
 				FA41BC9E25FD431200C50234 /* Crawler.swift in Sources */,
 				FA4CF987261FB31D00CBC4A1 /* UF.swift in Sources */,
 				FAA12DF725F975FB006D9C4B /* ExhaustiveResearch.swift in Sources */,
 				FAAD0D13261BE7FA002A7999 /* SushiReviews.swift in Sources */,
+				FA6F7F07262A48C200DE1064 /* ClimbingStairs.swift in Sources */,
 				FA43C83E26042AE4009FEC17 /* Diameter.swift in Sources */,
 				FA43C8312602E8AA009FEC17 /* Topic1.swift in Sources */,
 				FADD3798260B927D00FEA545 /* ConnectedComponents.swift in Sources */,
 				FAAD0CC72615FC8D002A7999 /* TomatoFarm.swift in Sources */,
 				FA6F8AC525FAD0A5008E95FD /* Board.swift in Sources */,
 				FA3339522624B4FF002C9D51 /* TwoCityScheduling.swift in Sources */,
+				FA6F7F13262CEBE700DE1064 /* FindTheCity.swift in Sources */,
+				FA33396726262AA5002C9D51 /* DijkstraArray.swift in Sources */,
 				FADD37AC260D2D9400FEA545 /* CyclicPermutation.swift in Sources */,
 				FADD3796260B927D00FEA545 /* AdjacencyList.swift in Sources */,
 				FADD3794260B927D00FEA545 /* BFS.swift in Sources */,
 				FADD37A4260C53B300FEA545 /* Town.swift in Sources */,
+				FA6F7F0A262A49D000DE1064 /* MakeOne.swift in Sources */,
 				FAAD0CCB2615FC9D002A7999 /* Bridges.swift in Sources */,
 				FA4AC70A25F820AA00B8F291 /* main.swift in Sources */,
 			);
