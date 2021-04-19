@@ -10,19 +10,20 @@ import Foundation
 func MinimumCostFlow() {
     // get MST here
     func kruskalMST(_ graph: [[graph]]) -> [(u: Int, v: Int, w: Int,x : Bool)] {
-        var allEdges = [(u: Int, v: Int, w: Int,x : Bool)]()
+        var edges = [(u: Int, v: Int, w: Int,x : Bool)]()
         var mstEdges = [(u: Int, v: Int, w: Int,x : Bool)]()
         
         for (u, node) in graph.enumerated() {
             for edge in node {
-                allEdges.append((u: u, v: edge.to, w: edge.weight,x : edge.active))
+                edges.append((u: u, v: edge.v, w: edge.w,x : edge.active))
             }
         }
-        allEdges.sort { $0.w < $1.w }
-        var uf = UnionFind(graph.count)
-        for edge in allEdges {
-            if uf.connected(edge.u, edge.v) { continue }
-            uf.union(edge.u, edge.v)
+        
+        edges.sort { $0.w < $1.w }
+        var unionFind = UnionFind(graph.count)
+        for edge in edges {
+            if unionFind.connected(edge.u, edge.v) { continue }
+            unionFind.union(edge.u, edge.v)
             mstEdges.append(edge)
         }
         
@@ -31,8 +32,8 @@ func MinimumCostFlow() {
     
     
     struct graph {
-        var to : Int
-        var weight : Int
+        var v : Int
+        var w : Int
         var active : Bool
     }
     
@@ -46,15 +47,15 @@ func MinimumCostFlow() {
     
     var count = 0
     
-    var maxGraph = graph(to: 0, weight: 0, active: false)
-    var arr = [[graph]](repeating: [graph](), count: read[1]+1)
+    var maxGraph = graph(v: 0, w: 0, active: false)
+    var graphs = [[graph]](repeating: [graph](), count: read[1]+1)
     
     for i in 1...read[1] {
         let read = readLine()!.split(separator: " ").map{Int($0)!}
         if i > inactiveCount {
-            arr[read[0]].append(graph(to: read[1], weight: read[2],active: false))
+            graphs[read[0]].append(graph(v: read[1], w: read[2],active: false))
         } else {
-            arr[read[0]].append(graph(to: read[1], weight: read[2],active: true))
+            graphs[read[0]].append(graph(v: read[1], w: read[2],active: true))
         }
         
         if read[2] > max {
@@ -65,24 +66,25 @@ func MinimumCostFlow() {
             } else {
                 maxBool = true
             }
-            maxGraph = graph(to: read[1], weight: read[2]-enhancer, active: maxBool)
+            maxGraph = graph(v: read[1], w: read[2]-enhancer, active: maxBool)
         }
     }
     
-    for i in 0...arr[maxFrom].count - 1 {
-        if arr[maxFrom][i].weight == max {
-            arr[maxFrom][i] = maxGraph
+    for i in 0...graphs[maxFrom].count - 1 {
+        if graphs[maxFrom][i].w == max {
+            graphs[maxFrom][i] = maxGraph
             break
         }
     }
     
-    for i in 0...kruskalMST(arr).count-1 {
-        if kruskalMST(arr)[i].x == false {
+    for i in 0...kruskalMST(graphs).count-1 {
+        if kruskalMST(graphs)[i].x == false {
             count += 1
         }
     }
     
 //    print(kruskalMST(arr))
+    print(graphs)
     print(count)
     
     struct UnionFind {
@@ -138,16 +140,5 @@ func MinimumCostFlow() {
                 parents[pRoot] = qRoot
             }
         }
-        
-        private func validate(_ p: Int) throws {
-            let n = parents.count
-            guard p >= 0 && p < n else {
-                throw RuntimeError.illegalArgumentError("index \(p) is not between 0 and \(n - 1)")
-            }
-        }
-    }
-    
-    enum RuntimeError: Error {
-        case illegalArgumentError(String)
     }
 }

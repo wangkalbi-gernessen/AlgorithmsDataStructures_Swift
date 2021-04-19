@@ -15,7 +15,7 @@ func makeOne() {
             var n = int
             nums[0] = n
             var count = 0
-            
+
             while n > 1 {
                 count += 1
                 if n % 3 == 2 && n % 2 == 0 {
